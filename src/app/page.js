@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { delagothicone, goldman } from "./font";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+const Page = () => {
+  return <div className={delagothicone.className}>hi</div>;
+};
 
-export default page
+export default Page;
