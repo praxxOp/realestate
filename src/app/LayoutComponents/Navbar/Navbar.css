@@ -1,0 +1,17 @@
+.main__navbar {
+  text-transform: uppercase;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-size: 13px;
+}
+.mid__nav {
+  display: flex;
+  width: 25vw;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
