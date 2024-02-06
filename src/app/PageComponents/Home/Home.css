@@ -9,3 +9,18 @@
 .headings__home{
     text-transform: uppercase;
 }
+
+.button{
+    width: 13vw;
+    background-color: #857676;
+    color: white;
+    height: 6.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button h4{
+    font-size: 13px;
+}
+
