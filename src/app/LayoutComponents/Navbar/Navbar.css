@@ -7,6 +7,7 @@
   justify-content: space-between;
   padding: 0px 20px;
   font-size: 13px;
+  cursor: pointer;
 }
 .mid__nav {
   display: flex;
@@ -15,3 +16,48 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+.mid__nav h4 {
+  width: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mid__nav h4:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 1s ease-in-out;
+}
+.mid__nav:hover h4:before {
+  width: 100%;
+}
+
+.right__nav {
+  width: 6vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right__nav:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width .5s ease-in-out;
+}
+
+.right__nav:hover:before{
+  width: 100%;
+}
+

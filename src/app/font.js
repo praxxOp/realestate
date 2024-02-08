@@ -1,7 +1,4 @@
-
-
-
-import { Michroma, Dela_Gothic_One, Sora } from "next/font/google";
+import {  Sora } from "next/font/google";
 import localFont from "next/font/local";
 
 export const goldman = localFont({
@@ -10,16 +7,9 @@ export const goldman = localFont({
   display: "swap",
 });
 
-export const michroma = Michroma({
-  weight: "400",
+export const MagnoSans = localFont({
+  src: "./MagnoSans-Extrabold.ttf",
   subsets: ["latin"],
-  display: "swap",
-});
-
-export const delagothicone = Dela_Gothic_One({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
 });
 
 export const sora = Sora({
