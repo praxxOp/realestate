@@ -1,0 +1,70 @@
+.main__property {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 27vh 20px;
+  border-radius: 50px 50px 0 0;
+  background-color: #372828;
+}
+
+.property__top__info {
+  display: flex;
+  width: 95vw;
+  height: 70vh;
+  justify-content: space-evenly;
+}
+
+.property__top__image{
+    border-radius: 30px ;
+    overflow: hidden;
+
+}
+.property__top__description {
+  margin-top: 10vh;
+}
+.property__top__p {
+  width: 40vw;
+  font-weight: 400;
+  font-family: "Calibri";
+  font-size: 1.7vw;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+.property__top__button {
+  width: 12vw;
+  background-color: #857676;
+  color: white;
+  height: 6.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.property__top__button h4 {
+  font-size: 13px;
+  width: 60%;
+  height: 43%;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.property__top__button h4:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 1s ease-in-out;
+}
+
+.property__top__button:hover h4:before {
+  width: 100%;
+}

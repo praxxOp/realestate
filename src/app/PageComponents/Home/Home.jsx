@@ -9,7 +9,7 @@ const Home = () => {
       <div className="main__home">
         <div className="headings__home">
           <div className="button">
-             <h4 className={goldman.className}>EXPLORE</h4> 
+            <h4 className={goldman.className}>EXPLORE</h4>
           </div>
           <h1 className={` ${MagnoSans.className} prime__h1`}>
             Prime <sup>®</sup>
@@ -27,6 +27,7 @@ const Home = () => {
                     duration: 1,
                   },
                 }}
+                key={index}
               >
                 {item}
               </motion.span>
