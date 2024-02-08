@@ -14,10 +14,9 @@
   justify-content: space-evenly;
 }
 
-.property__top__image{
-    border-radius: 30px ;
-    overflow: hidden;
-
+.property__top__image {
+  border-radius: 30px;
+  overflow: hidden;
 }
 .property__top__description {
   margin-top: 10vh;
@@ -34,9 +33,11 @@
 
 .property__top__button {
   width: 12vw;
-  background-color: #857676;
+  margin-top: 20vh;
   color: white;
-  height: 6.5vh;
+  border-radius: 50px;
+  height: 10vh;
+  border: 1px solid #857676;
   display: flex;
   justify-content: center;
   align-items: center;
