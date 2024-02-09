@@ -32,7 +32,7 @@
 }
 
 .property__top__button {
-  width: 12vw;
+  width: 18vw;
   margin-top: 20vh;
   color: white;
   border-radius: 50px;
@@ -46,9 +46,8 @@
 
 .property__top__button h4 {
   font-size: 13px;
-  width: 60%;
+  width: 40%;
   height: 43%;
-
   position: relative;
   display: flex;
   justify-content: center;
@@ -68,4 +67,79 @@
 
 .property__top__button:hover h4:before {
   width: 100%;
+}
+.arrow {
+  margin-left: 10px;
+}
+.property__top__button:hover .arrow {
+  scale: 1.2;
+  transition: 1s ease-in-out;
+}
+
+.property__bottom__info {
+  display: flex;
+  width: 95vw;
+  height: 70vh;
+  justify-content: space-evenly;
+}
+
+.property__bottom__img {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.property__bottom__description {
+  margin-top: 10vh;
+}
+
+.property__bottom__p {
+  width: 40vw;
+  font-weight: 400;
+  font-family: "Calibri";
+  font-size: 1.7vw;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+.property__bottom__button {
+  width: 18vw;
+  margin-top: 20vh;
+  color: white;
+  border-radius: 50px;
+  height: 10vh;
+  border: 1px solid #857676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.property__bottom__button h4 {
+  font-size: 13px;
+  width: 40%;
+  height: 43%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.property__bottom__button h4:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 1s ease-in-out;
+}
+.property__bottom__button:hover h4:before {
+  width: 100%;
+}
+.arrow {
+  margin-left: 10px;
+}
+.property__bottom__button:hover .arrow {
+  scale: 1.2;
+  transition: 1s ease-in-out;
 }
