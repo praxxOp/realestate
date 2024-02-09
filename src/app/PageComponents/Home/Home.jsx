@@ -34,7 +34,7 @@ const Home = () => {
             ))}
           </h1>
         </div>
-        <p>
+        <p className="home__p">
           Unlock Dreams: Elevate your lifestyle with our premier real estate
           solutions at Epic Estates. Discover exceptional properties and turn
           your aspirations into reality.

@@ -65,7 +65,7 @@
   overflow: hidden;
 }
 
-p {
+.home__p {
   margin-left: 2.5vw;
   font-family: "Courier New", Courier, monospace;
   width: 90vw;

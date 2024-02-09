@@ -3,7 +3,7 @@
 import React from "react";
 import "./Property.css";
 import Image from "next/image";
-import { MagnoSans, goldman } from "@/app/font";
+import { MagnoSans, goldman, neuo } from "@/app/font";
 import { motion } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -38,7 +38,7 @@ const Property = () => {
             />
           </motion.div>
           <div className="property__top__description">
-            <div className={` property__top__p`}>
+            <div className={`${neuo.className} property__top__p`}>
               Discover your dream home in our 'Buy' section. From urban condos
               to suburban houses, find the perfect property for you. Start your
               journey today!
@@ -54,7 +54,7 @@ const Property = () => {
         </div>
         <div className="property__bottom__info">
           <div className="property__bottom__description">
-            <div className={` property__bottom__p`}>
+            <div className={` ${neuo.className} property__bottom__p`}>
               Discover your dream home in our 'Buy' section. From urban condos
               to suburban houses, find the perfect property for you. Start your
               journey today!
@@ -113,7 +113,7 @@ const Property = () => {
             EXPERINCE <span>EXPERINCE</span>
           </motion.h1>
           <div className="heading__p">
-            <p>
+            <p className={neuo.className}>
               Choose, Thrive: Uncover the freedom of ownership or indulge in the
               comfort of renting. Your perfect abode, your way.
             </p>

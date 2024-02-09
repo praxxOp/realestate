@@ -17,3 +17,9 @@ export const sora = Sora({
   display: "swap",
   weight: ["400", "500", "600"],
 });
+
+
+export const neuo = localFont({
+  src:"./neuo.otf",
+  subsets: ["latin"],
+})

@@ -24,9 +24,7 @@
 .property__top__p {
   width: 40vw;
   font-weight: 400;
-  font-family: "Calibri";
   font-size: 1.7vw;
-  text-transform: capitalize;
   margin-bottom: 20px;
   color: aliceblue;
 }
@@ -95,9 +93,7 @@
 .property__bottom__p {
   width: 40vw;
   font-weight: 400;
-  font-family: "Calibri";
   font-size: 1.7vw;
-  text-transform: capitalize;
   margin-bottom: 20px;
   color: aliceblue;
 }
@@ -176,10 +172,9 @@
   align-items: center;
   justify-content: center;
   padding-top: 10vh;
+  color: aliceblue;
 }
 .property__heading p {
-  font-family: "Calibri";
-  text-transform: capitalize;
   font-size: 1.5vw;
   width: 40%;
 }
