@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   padding: 27vh 20px;
-  border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px;
   background-color: #372828;
 }
 
@@ -73,7 +73,7 @@
 }
 .property__top__button:hover .arrow {
   scale: 1.2;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .property__bottom__info {
@@ -141,5 +141,45 @@
 }
 .property__bottom__button:hover .arrow {
   scale: 1.2;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.property__heading {
+  height: 80vh;
+  width: 100%;
+  color: white;
+  margin-top: 20vh;
+}
+.property__heading h1 {
+  line-height: 80%;
+}
+
+.property__heading__first__h1 {
+  font-size: 10vw;
+}
+
+.property__heading__second__h1 {
+  font-size: 30vw;
+  display: flex;
+  padding-left: 9vw;
+  color: #857676;
+}
+
+.property__heading__second__h1 span {
+  margin-left: 8vw;
+}
+
+.heading__p {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+}
+.property__heading p {
+  font-family: "Calibri";
+  text-transform: capitalize;
+  font-size: 1.5vw;
+  width: 40%;
 }

@@ -92,8 +92,34 @@ const Property = () => {
             />
           </motion.div>
         </div>
+        <div className="property__heading">
+          <h1
+            className={`${MagnoSans.className} property__heading__first__h1 `}
+          >
+            INVEST IN
+          </h1>
+          <motion.h1
+            animate={{
+              x: "-93%",
+            }}
+            transition={{
+              ease: "linear",
+              duration: 8,
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+            className={`${MagnoSans.className} property__heading__second__h1 `}
+          >
+            EXPERINCE <span>EXPERINCE</span>
+          </motion.h1>
+          <div className="heading__p">
+            <p>
+              Choose, Thrive: Uncover the freedom of ownership or indulge in the
+              comfort of renting. Your perfect abode, your way.
+            </p>
+          </div>
+        </div>
       </div>
-      
     </>
   );
 };
