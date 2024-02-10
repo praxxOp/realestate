@@ -2,14 +2,10 @@
 
 import React, { useState } from "react";
 import "./About.css";
-import { MagnoSans, neuo } from "@/app/font";
+import { MagnoSans, goldman, neuo } from "@/app/font";
 import Image from "next/image";
+import { GoArrowUpRight } from "react-icons/go";
 const About = () => {
-  const [first, setfirst] = useState(false);
-
-  const firstfeature = () => {
-    setfirst(!first);
-  };
   return (
     <>
       <div className="main__about">
@@ -20,10 +16,7 @@ const About = () => {
             </div>
             <div className="about__left__features">
               <div className="first__feature">
-                <h1
-                  onClick={firstfeature}
-                  className={`${neuo.className} feature__headings`}
-                >
+                <h1 className={`${neuo.className} feature__headings`}>
                   Trusted Professionals
                 </h1>
                 <p className={`${neuo.className} feature__para`}>
@@ -58,7 +51,13 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="about__right"></div>
+          <div className="about__right">
+            <div className="stats__button">
+              <h4 className={goldman.className}>
+                View stats <GoArrowUpRight size={30} />
+              </h4>
+            </div>
+          </div>
         </div>
         <div className="about__image">
           <Image

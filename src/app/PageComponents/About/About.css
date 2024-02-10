@@ -5,6 +5,10 @@
   border-radius: 50px 50px;
   color: #1c1b1d;
 }
+
+.about__description {
+  display: flex;
+}
 .about__left {
   height: 130vh;
   width: 50%;
@@ -46,7 +50,50 @@
   font-size: 1.2vw;
   margin-bottom: 30px;
 }
-.about__image{
+.about__right {
+  height: 70vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.stats__button {
+  width: 18vw;
+  border-radius: 50px;
+  height: 10vh;
+  border: 1px solid #857676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #372828;
+}
+
+.stats__button h4 {
+  font-size: 18px;
+  width: 55%;
+  height: 43%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stats__button h4:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #372828;
+  transition: width 1s ease-in-out;
+}
+
+.stats__button:hover h4:before {
+  width: 100%;
+}
+
+.about__image {
   width: 100%;
   height: 300px;
   display: flex;
