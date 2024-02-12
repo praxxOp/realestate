@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import "./About.css";
 import { MagnoSans, goldman, neuo } from "@/app/font";
 import Image from "next/image";
-import { GoArrowUpRight } from "react-icons/go";
+
+import { VscChevronDown } from "react-icons/vsc";
 const About = () => {
   return (
     <>
@@ -54,9 +55,13 @@ const About = () => {
           <div className="about__right">
             <div className="stats__button">
               <h4 className={goldman.className}>
-                View stats <GoArrowUpRight size={30} />
+                View stats
+                <VscChevronDown size={30} style={{ marginLeft: "2px" }} />
               </h4>
             </div>
+            <div className="stats__section">
+
+              </div>
           </div>
         </div>
         <div className="about__image">

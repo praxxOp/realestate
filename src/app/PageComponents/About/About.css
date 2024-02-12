@@ -51,11 +51,12 @@
   margin-bottom: 30px;
 }
 .about__right {
-  height: 70vh;
+  height: 110vh;
   width: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
 }
 .stats__button {
   width: 18vw;
@@ -91,6 +92,13 @@
 
 .stats__button:hover h4:before {
   width: 100%;
+}
+.stats__section{
+  height: 40vh;
+  width: 40vw;
+  background-color: #1c1b1d;
+  margin-top: 1.5vw;
+  border-radius: 20px;
 }
 
 .about__image {
