@@ -73,8 +73,10 @@ const About = () => {
               <AnimatePresence>
                 {toggle ? (
                   <motion.div
+                  
                     animate={{
                       bottom: "20vh",
+                     
                     }}
                     transition={{
                       duration: 1.5,
@@ -82,6 +84,7 @@ const About = () => {
                     }}
                     exit={{
                       bottom: "60vh",
+                      opacity: 0,
                       transition: {
                         duration: 1.5,
                         type: "spring",
