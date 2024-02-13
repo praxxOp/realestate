@@ -1,12 +1,18 @@
 "use client";
-
+import { VscChevronUp } from "react-icons/vsc";
 import React, { useState } from "react";
 import "./About.css";
 import { MagnoSans, goldman, neuo } from "@/app/font";
 import Image from "next/image";
+import { motion, AnimatePresence, spring } from "framer-motion";
 
 import { VscChevronDown } from "react-icons/vsc";
 const About = () => {
+  const [toggle, settoggle] = useState(true);
+
+  const togglebutton = () => {
+    settoggle(!toggle);
+  };
   return (
     <>
       <div className="main__about">
@@ -53,15 +59,60 @@ const About = () => {
             </div>
           </div>
           <div className="about__right">
-            <div className="stats__button">
+            <div onClick={togglebutton} className="stats__button">
               <h4 className={goldman.className}>
                 View stats
-                <VscChevronDown size={30} style={{ marginLeft: "2px" }} />
+                {!toggle ? (
+                  <VscChevronDown size={30} style={{ marginLeft: "2px" }} />
+                ) : (
+                  <VscChevronUp size={30} style={{ marginLeft: "2px" }} />
+                )}
               </h4>
             </div>
-            <div className="stats__section">
-
-              </div>
+            <div className="main__stats">
+              <AnimatePresence>
+                {toggle ? (
+                  <motion.div
+                    animate={{
+                      bottom: "20vh",
+                    }}
+                    transition={{
+                      duration: 1.5,
+                      type: "spring",
+                    }}
+                    exit={{
+                      bottom: "60vh",
+                      transition: {
+                        duration: 1.5,
+                        type: "spring",
+                      },
+                    }}
+                    className={` ${MagnoSans.className}  stats__section`}
+                  >
+                    <div className="stats__section__children">
+                      <h1>1000+</h1>
+                      <h2 className={neuo.className}>
+                        Total Properties Listed
+                      </h2>
+                    </div>
+                    <div className="stats__section__children">
+                      <h1>5+</h1>
+                      <h2 className={neuo.className}>Countries Covered</h2>
+                    </div>
+                    <div className="stats__section__children">
+                      <h1>25000</h1>
+                      <h2 className={neuo.className}>Registered Users</h2>
+                    </div>
+                    <div className="stats__section__children">
+                      <h1>4.5/5</h1>
+                      <h2 className={neuo.className}>
+                        Average Customer Rating
+                      </h2>
+                    </div>
+                  </motion.div>
+                ) : null}
+              </AnimatePresence>
+            </div>
           </div>
         </div>
         <div className="about__image">
