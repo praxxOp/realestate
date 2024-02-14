@@ -1,9 +1,39 @@
-import React from 'react'
-import "./Forrent.css"
-const page = () => {
-  return (
-    <div>for rent</div>
-  )
+import React from "react";
+import "./Forrent.css";
+import Rentpage from "../PageComponents/Rentpage/Rentpage";
+import { MagnoSans } from "../font";
+
+async function getData() {
+  const baseUrl = "https://bayut.p.rapidapi.com";
+  const res = await fetch(
+    `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=8`,
+    {
+      headers: {
+        "X-RapidAPI-Key": "0878a0597amsh240075e061d2411p16fc5ejsnba8b1f25a74e",
+        "X-RapidAPI-Host": "bayut.p.rapidapi.com",
+      },
+    }
+  );
+  const data = await res.json();
+  return data;
 }
 
-export default page
+const Page = async () => {
+  const propertyForRent = await getData();
+  const properties = await propertyForRent?.hits;
+  
+  return (
+    <>
+    <div className="main__rentpage">
+    <div className={` ${MagnoSans.className} heading`}>
+      RENT HOUSE
+    </div>
+      {properties.map((property) => 
+        <Rentpage property={property} key={property.id}/>
+      )}
+      </div>
+    </>
+  );
+};
+
+export default Page;

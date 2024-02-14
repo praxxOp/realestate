@@ -1,0 +1,16 @@
+.main__rentpage{
+    min-height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    border-radius: 50px;
+}
+
+
+.heading{
+    width: 100%;
+    height:  30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+}
