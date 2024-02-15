@@ -17,7 +17,6 @@ async function getData() {
   const data = await res.json();
   return data;
 }
-
 const Page = async () => {
   const propertyDescriptions = [
     "Charming two-bedroom apartment with modern amenities, located in a peaceful neighborhood. This cozy home features a spacious living room, updated kitchen, and a private balcony with stunning views. Ideal for those seeking comfort and convenience.",
