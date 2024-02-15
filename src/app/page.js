@@ -11,7 +11,7 @@ const Page = () => {
     <Home/>
     <Property/>
     <Portfolio/>
-    <About/>
+    <About  />
     </>
   );
 };

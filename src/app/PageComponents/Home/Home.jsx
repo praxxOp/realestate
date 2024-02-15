@@ -3,13 +3,14 @@ import React from "react";
 import "./Home.css";
 import { MagnoSans, goldman } from "@/app/font";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const Home = () => {
   return (
     <>
       <div className="main__home">
         <div className="headings__home">
           <div className="button">
-            <h4 className={goldman.className}>EXPLORE</h4>
+          <Link style={{textDecoration:"none"}} href="/forrent"> <h4 className={goldman.className}>EXPLORE</h4> </Link>
           </div>
           <h1 className={` ${MagnoSans.className} prime__h1`}>
             Prime <sup>®</sup>
