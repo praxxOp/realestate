@@ -9,7 +9,7 @@ async function getData() {
     `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=8`,
     {
       headers: {
-        "X-RapidAPI-Key": "0878a0597amsh240075e061d2411p16fc5ejsnba8b1f25a74e",
+        "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPID_API_KEY,
         "X-RapidAPI-Host": "bayut.p.rapidapi.com",
       },
     }
