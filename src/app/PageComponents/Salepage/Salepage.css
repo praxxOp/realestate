@@ -1,0 +1,89 @@
+.sale__page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.sale__left__main {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sale__right__main {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  color: #1c1b1d;
+}
+
+.sale__room__info {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.sale__room__info .title {
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.sale__room__info p {
+  margin-bottom: -50px;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.sale__room__info h2 {
+  font-size: 1.3vw;
+  text-transform: capitalize;
+}
+.sale__room__pricing {
+  height: 40%;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Buy__button {
+  width: 18vw;
+  color: #ffffff;
+  border-radius: 50px;
+  height: 10vh;
+  background-color: #1c1b1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: -20px;
+}
+
+.Buy__button h4 {
+  font-size: 13px;
+  width: 60%;
+  height: 43%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Buy__button h4:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  transition: width 1s ease-in-out;
+}
+
+.Buy__button:hover h4::before {
+  width: 100%;
+}
