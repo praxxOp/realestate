@@ -6,7 +6,7 @@ import Image from "next/image";
 import { MagnoSans, goldman, neuo } from "@/app/font";
 import { motion } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
-
+import Link from "next/link";
 const Property = () => {
   return (
     <>
@@ -44,12 +44,14 @@ const Property = () => {
               journey today!
             </div>
 
-            <div className={`  property__top__button`}>
-              <h4 className={goldman.className}>BUY HOUSE</h4>
-              <div className="arrow">
-                <GoArrowUpRight size={30} />
+            <Link style={{ textDecoration: "none" }} href="/forsale">
+              <div className={` property__top__button`}>
+                <h4 className={goldman.className}>BUY HOUSE</h4>
+                <div className="arrow">
+                  <GoArrowUpRight size={30} />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="property__bottom__info">
@@ -59,12 +61,14 @@ const Property = () => {
               to suburban houses, find the perfect property for you. Start your
               journey today!
             </div>
-            <div className="property__bottom__button">
-              <h4 className={goldman.className}>RENT HOUSE</h4>
-              <div className="arrow">
-                <GoArrowUpRight size={30} />
+            <Link style={{ textDecoration: "none" }} href="/forrent">
+              <div className="property__bottom__button">
+                <h4 className={goldman.className}>RENT HOUSE</h4>
+                <div className="arrow">
+                  <GoArrowUpRight size={30} />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
           <motion.div
             initial={{

@@ -10,7 +10,7 @@ const Navbar = () => {
           <h4 className="logo">REAL ESTATES</h4>
         </Link>
         <div className="mid__nav">
-          <h4>Buy House</h4>
+        <Link style={{ textDecoration: "none" }} href="/forsale"> <h4>Buy House</h4></Link> 
           <Link style={{ textDecoration: "none" }} href="/forrent">
             <h4>Rent House</h4>
           </Link>

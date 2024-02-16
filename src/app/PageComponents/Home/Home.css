@@ -8,8 +8,7 @@
 .headings__home {
   text-transform: uppercase;
 }
-
-.button {
+ .button {
   width: 12vw;
   background-color: #857676;
   color: white;
@@ -23,7 +22,7 @@
 
 .button h4 {
   font-size: 13px;
-  width: 100%;
+  width: 45%;
   height: 43%;
   position: relative;
   color: white;
