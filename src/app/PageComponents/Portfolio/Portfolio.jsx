@@ -13,7 +13,7 @@ const Portfolio = () => {
           data visualizations to witness firsthand how I excel in these areas.
         </p>
         <div className="portfolio__button">
-          <h4 className={goldman.className}>MY PORTFOLIO</h4>
+        <a className={goldman.className} href="https://prathameshh.netlify.app/" target="_blank" rel="noopener noreferrer"> MY PORTFOLIO</a>
           <GoArrowUpRight size={30} />
         </div>
       </div>

@@ -25,7 +25,7 @@
   color: #372828;
 }
 
-.portfolio__button h4 {
+.portfolio__button a {
   font-size: 13px;
   width: 45%;
   height: 43%;
@@ -33,9 +33,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #372828;
 }
 
-.portfolio__button h4:before {
+.portfolio__button a:before {
   content: "";
   position: absolute;
   bottom: 0;
